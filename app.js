@@ -2,8 +2,10 @@ var express = require('express');
 
 var app = express();
 
-app.use('/', function(req, res) {
-	res.send('Hello')
+app.get('/', function(req, res) {
+	res.json({message: 'Hello'});
 });
 
 app.listen(process.env.PORT || 3000);
+
+module.exports = app;
