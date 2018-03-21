@@ -7,8 +7,8 @@ jobs:
       script: npm test
     - stage: deploy
       script: skip
-      deploy: &heroku
+      deploy:
         provider: heroku
         app: random-dev-blog
         api_key:
-        secure: db99561d-97c9-4bbc-93c6-563c55d47b62
+          secure: db99561d-97c9-4bbc-93c6-563c55d47b62
