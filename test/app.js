@@ -11,7 +11,7 @@ describe('Simple test', function() {
     .get('/')
     .end(function(err, res){
 		res.should.have.status(200);
-		res.body.message.should.equal('Hello');
+		res.body.message.should.equal('Hello world');
 		done();
     });
   });
