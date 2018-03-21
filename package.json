@@ -1,0 +1,23 @@
+{
+  "name": "dev-blog",
+  "version": "1.0.0",
+  "description": "Simple blog web app using Travis and Heroku",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allstar-dev/dev-blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allstar-dev/dev-blog/issues"
+  },
+  "homepage": "https://github.com/allstar-dev/dev-blog#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
