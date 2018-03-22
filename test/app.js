@@ -23,7 +23,7 @@ describe('Simple test', function() {
     .get('/info')
     .end(function(err, res){
 		res.should.have.status(200);
-		res.body.message.should.equal('Apprunning...');
+		res.body.message.should.equal('App running...');
 		done();
     });
   });
