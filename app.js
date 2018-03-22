@@ -6,6 +6,10 @@ app.get('/', function(req, res) {
 	res.json({message: 'Hello world'});
 });
 
+app.get('/info', function(req, res) {
+	res.json({message: 'App running...'});
+});
+
 app.listen(process.env.PORT || 3000);
 
 module.exports = app;

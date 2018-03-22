@@ -16,3 +16,15 @@ describe('Simple test', function() {
     });
   });
 });
+
+describe('Simple test', function() {
+  it('should return Hello at root URL', function(done) {
+	chai.request(app)
+    .get('/info')
+    .end(function(err, res){
+		res.should.have.status(200);
+		res.body.message.should.equal('App running...');
+		done();
+    });
+  });
+});
