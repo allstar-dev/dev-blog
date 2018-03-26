@@ -10,6 +10,8 @@ app.get('/info', function(req, res) {
 	res.json({message: 'App running...'});
 });
 
+app.use(express.static('public'));
+
 app.listen(process.env.PORT || 3000);
 
 module.exports = app;
