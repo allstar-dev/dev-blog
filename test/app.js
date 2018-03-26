@@ -8,7 +8,7 @@ chai.use(chaiHttp);
 describe('Simple test', function() {
   it('should return Hello at root URL', function(done) {
 	chai.request(app)
-    .get('/')
+    .get('/hello')
     .end(function(err, res){
 		res.should.have.status(200);
 		res.body.message.should.equal('Hello world');
