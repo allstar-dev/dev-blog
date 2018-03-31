@@ -10,7 +10,7 @@ app.get('/info', function(req, res) {
 	res.json({message: 'App running...'});
 });
 
-app.use('/', express.static('public'));
+app.use('/', express.static('ui/dist'));
 
 app.listen(process.env.PORT || 3000);
 
